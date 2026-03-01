@@ -1,7 +1,7 @@
 # FILE NAME - phishing_email_detector.py
 
-# NAME: 
-# DATE: 
+# NAME: Patrick Babb
+# DATE: 3/1/2026
 # BRIEF DESCRIPTION:  
 
 
@@ -15,6 +15,26 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
+def main():
+    phishing_detector()
+
+def phishing_detector():
+    email_subject = input('Enter the email subject line: ')
+    if 'immediate action required' in email_subject.lower():
+        print('HIGH RISK: Possible phishing attempt.')
+    elif 'urgent' in email_subject.lower():
+        print('HIGH RISK: Possible phishing attempt.')
+    elif 'free' in email_subject.lower():
+        print('MEDIUM RISK: Suspicious offer detected.')
+    elif 'win' in email_subject.lower():
+        print('MEDIUM RISK: Suspicious offer detected.')
+    elif 'password reset' in email_subject.lower():
+        print('LOW RISK: Verify legitimacy with sender.')
+    else:
+        print('No phishing indicators detected.')
+    print('------------------------')
+    print(f'Analyzed subject: {email_subject}')
+main()
 
 
 
@@ -77,7 +97,8 @@ Analyzed subject: "Did you request a password reset?"
 '''
 
 1. Was using `in` difficult or was it natural?
-
+it was challenging to grasp the syntax needs initially but now it seems to be easy, needed to have one thing in '' per in 
+was very unclear at first
 
 
 
@@ -97,7 +118,7 @@ Analyzed subject: "Did you request a password reset?"
 Please gauge your utilization of AI on the following spectrum. Place an "X" in front
 of the appropriate response. Only choose one of the following:
 
-[ ] I did not use AI at all for this lab.
+[X] I did not use AI at all for this lab.
 [ ] I wrote the initial draft of the software but had AI help me make it better.
 [ ] I fed the lab description to AI and had it generate a response but I modified it.
 [ ] AI created the entire program for me.
@@ -112,6 +133,6 @@ may impede your understanding. Please rate how well you understand the concepts 
 [ ] I understand very little about this lab.
 [ ] I am about 50/50 on this lab; I get parts of it but not the whole picture.
 [ ] I pretty much get it.
-[ ] I'm solid. Totally got it.
+[X] I'm solid. Totally got it.
 
 '''
