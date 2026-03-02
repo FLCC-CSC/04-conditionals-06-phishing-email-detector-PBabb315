@@ -2,7 +2,7 @@
 
 # NAME: Patrick Babb
 # DATE: 3/1/2026
-# BRIEF DESCRIPTION: creating a phishing email detection program using conditionals 
+# BRIEF DESCRIPTION:  
 
 
 
@@ -20,7 +20,7 @@ def main():
 
 def phishing_detector():
     email_subject = input('Enter the email subject line: ')
-    print()
+    print('SECURITY ASSESSMENT:')
     if 'immediate action required' in email_subject.lower():
         print('HIGH RISK: Possible phishing attempt.')
     elif 'urgent' in email_subject.lower():
